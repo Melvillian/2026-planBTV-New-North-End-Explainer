@@ -1,0 +1,16 @@
+{
+  "name": "@melvillian/common-lib",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "source": "src/index.ts",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --root . --passWithNoTests",
+    "lint": "eslint src --fix"
+  },
+  "devDependencies": {}
+}

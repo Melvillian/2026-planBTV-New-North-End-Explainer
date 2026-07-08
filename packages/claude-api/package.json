@@ -1,0 +1,21 @@
+{
+  "name": "@melvillian/claude-api",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "source": "src/index.ts",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --root . --passWithNoTests",
+    "lint": "eslint src --fix"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@melvillian/common-lib": "workspace:*",
+    "@anthropic-ai/sdk": "^0.60.0",
+    "dotenv": "^16.4.5"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "cli",
+  "version": "1.2.3",
+  "type": "module",
+  "source": "./src/index.ts",
+  "main": "./dist/index.js",
+  "bin": "./bin/cli.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --root . --passWithNoTests",
+    "lint": "eslint src --fix",
+    "start": "bun bin/cli.js",
+    "build:single": "bun run build && bun build bin/cli.js --compile --outfile cli --target=bun --define BUILD_VERSION=\"$(cat package.json | jq -r '.version')\""
+  },
+  "dependencies": {
+    "@melvillian/common-lib": "workspace:*",
+    "@melvillian/openai-summarizer": "workspace:*",
+    "commander": "^14.0.2",
+    "date-fns": "^4.1.0",
+    "wellcrafted": "^0.23.1"
+  }
+}

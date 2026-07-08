@@ -1,0 +1,11 @@
+.env
+.git
+node_modules
+dist
+build
+stats.html
+log.txt
+coverage
+*.tsbuildinfo
+claude-setup.tar.gz
+.DS_Store
