@@ -2,7 +2,7 @@
 
 ## Overview
 
-Express HTTP API server. Part of the monorepo workspace.
+Express HTTP API server. Part of the monorepo workspace. Also serves the built `apps/web` SPA: `express.static` + SPA fallback for non-API GETs. Web bundle path defaults to `../../web/dist` (works in dev and compiled modes); override with `WEB_DIST_PATH` if the bundle lives elsewhere (the Docker image copies the whole built tree, so the default path works there too). If the bundle is missing, `/` returns 503 with a build hint. JSON endpoints: `/health`, `/api/info`.
 
 ## Commands
 

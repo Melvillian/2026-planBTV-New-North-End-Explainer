@@ -1,5 +1,5 @@
 {
-  "name": "template-typescript-monorepo",
+  "name": "2026-planbtv-new-north-end-explainer",
   "version": "1.6.0",
   "private": true,
   "description": "",
@@ -9,9 +9,10 @@
   "scripts": {
     "build": "bun --filter '*' build",
     "dev:api": "bun --filter './packages/*' build && bun --filter api dev",
+    "dev:web": "bun --filter web dev",
     "dev:cli": "bun --filter './packages/*' build && bun --filter cli start",
-    "docker:build:api": "docker build -t template-typescript-monorepo-api -f apps/api/Dockerfile .",
-    "docker:start:api": "docker run --rm --init -p 8080:80 template-typescript-monorepo-api",
+    "docker:build:api": "docker build -t 2026-planbtv-new-north-end-explainer-api -f apps/api/Dockerfile .",
+    "docker:start:api": "docker run --rm --init -p 8080:80 2026-planbtv-new-north-end-explainer-api",
     "clean": "rimraf dist packages/**/dist apps/**/dist",
     "clean:all": "rimraf dist node_modules packages/**/node_modules packages/**/dist apps/**/node_modules apps/**/dist",
     "lint:check": "eslint .",

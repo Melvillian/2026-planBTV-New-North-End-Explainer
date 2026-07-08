@@ -1,8 +1,8 @@
-# TypeScript + Cli + Rest API + (TODO) React App Mono Repository
+# planBTV New North End Explainer
 
-This is a template for a monorepo that uses best practices for building Typescript web services.
+A resident-facing web app that explains the June 2026 draft **planBTV New North End** neighborhood plan for Burlington, VT. It lets a New North End resident understand, in one sitting, what the plan proposes, what changes for them, and what happens next — honestly, including community concerns. Content is sourced from the 219-page draft plan PDF (see `website-content-sources.md`).
 
-It is what @Melvillian considers best practice in April 2026.
+The repo is a TypeScript monorepo (Bun workspaces): `apps/web` is the Vite + React explainer SPA, `apps/api` is an Express server that serves the built web app and JSON endpoints, and `packages/*` hold the importable logic.
 
 ## Setup
 
@@ -25,15 +25,10 @@ See the [Environment variables](#environment-variables) section below for requir
 - TypeScript for type safety
 - ES Modules for fast builds
 - NodeNext node resolution
-- (TODO) React for UI
-- Tailwindcss for styling
-- Both (TODO) react and vanilla JS libraries
-- Command line, (TODO) React app, and web server
-- Vite for Bundling, CSS Handling, Live Reloading
+- React (Vite) web app in `apps/web`
+- Command line app, React app, and web server
 - CLI via @commander
 - Express for the API server
-- Hot reload of (TODO) React
-- Auto service restart for the web server
 - Prettier for code formatting
 - ESLint for linting
 - VSCode will auto-format on save and paste
