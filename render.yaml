@@ -1,0 +1,18 @@
+services:
+
+  - type: web
+    name: 2026-planBTV-New-North-End-Explainer-api
+    env: docker
+    autoDeploy: true
+    dockerfilePath: apps/api/Dockerfile
+    healthCheckPath: /health
+    envVars:
+      # Image-constant env vars (also baked into the Dockerfile; safe to repeat):
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 80
+      # Secrets: declare with `sync: false` and enter the value in the Render
+      # dashboard (encrypted, never committed). Example:
+      # - key: SOME_API_KEY
+      #   sync: false
