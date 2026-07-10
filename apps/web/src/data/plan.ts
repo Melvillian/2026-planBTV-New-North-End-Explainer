@@ -937,3 +937,6 @@ export const bowlingAlleyQuote =
 
 export const sourceNote =
   'This site summarizes the draft planBTV New North End (June 2026, 219 pages). It is an unofficial explainer; page citations refer to the draft document. Implementation is not guaranteed — it depends on resident participation, political will, and funding (p. 207).';
+
+export const planPdfUrl =
+  'https://www.burlingtonvt.gov/DocumentCenter/View/12098/planBTV-New-North-End-Draft?bidId=';

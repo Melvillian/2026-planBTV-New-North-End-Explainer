@@ -1,4 +1,4 @@
-import { headlineStats, visionStatement } from '../data/plan';
+import { headlineStats, planPdfUrl, visionStatement } from '../data/plan';
 
 // The five focus areas in south-to-north order along North Avenue, drawn as
 // an interactive corridor strip — the page's signature element.
@@ -23,7 +23,11 @@ export function Hero() {
         blunt: housing in the New North End “is not a question of ‘whether,’ but
         ‘how.’” Nearly every trip in the neighborhood funnels onto one street —
         North Avenue — so the plan is built around that corridor. Here’s the
-        whole 219-page draft, made readable.
+        whole{' '}
+        <a href={planPdfUrl} target="_blank" rel="noopener noreferrer">
+          219-page draft
+        </a>
+        , made readable.
       </p>
 
       <figure
