@@ -11,6 +11,7 @@
     "dev:api": "bun --filter './packages/*' build && bun --filter api dev",
     "dev:web": "bun --filter web dev",
     "dev:cli": "bun --filter './packages/*' build && bun --filter cli start",
+    "cli": "bun --filter './packages/*' build && bun --filter cli build && bun apps/cli/bin/cli.js",
     "docker:build:api": "docker build -t 2026-planbtv-new-north-end-explainer-api -f apps/api/Dockerfile .",
     "docker:start:api": "docker run --rm --init -p 8080:80 2026-planbtv-new-north-end-explainer-api",
     "clean": "rimraf dist packages/**/dist apps/**/dist",

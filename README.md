@@ -41,6 +41,7 @@ See the [Environment variables](#environment-variables) section below for requir
 | -------------------------- | ----------------------------------------------------- |
 | `bun run build`            | Build all packages and apps                           |
 | `bun run dev:cli`          | Build packages, then run the CLI app                  |
+| `bun run cli <command>`    | Build, then run a CLI command (see below)             |
 | `bun run dev:api`          | Build packages, then run the API server in watch mode |
 | `bun run docker:build:api` | Build the API Docker image                            |
 | `bun run docker:start:api` | Run the API Docker image on port 8080                 |
@@ -55,6 +56,24 @@ See the [Environment variables](#environment-variables) section below for requir
 | `bun run clean:all`        | Remove dist + node_modules                            |
 | `bun run cloc`             | Count lines of code                                   |
 | `bun run depcheck`         | Report unused dependencies                            |
+
+## Tracking draft plan PDF updates
+
+The website's content is derived from `planBTV.pdf`, the draft plan published by the city. `planBTV-sha256.txt` (repo root) stores the SHA256 of the version of the PDF the website content is currently based on, so the site maintainer (not site visitors) can detect when the city publishes a new draft and the website needs updating.
+
+Check whether a newly downloaded draft differs from the one the site is based on:
+
+```bash
+bun run cli compare-sha <path/to/new/planbtv.pdf>
+```
+
+Prints `MATCH` (exit 0) if the PDF is unchanged, or `NO MATCH` (exit 1) with both hashes if it differs. After updating the website content from a new draft, record its hash:
+
+```bash
+bun run cli update-hash <path/to/new/planbtv.pdf>
+```
+
+This overwrites `planBTV-sha256.txt` with the new PDF's SHA256 (equivalent to `shasum -a 256 planBTV.pdf | awk '{print $1}' > planBTV-sha256.txt`). Both commands accept `--hash-file <path>` to use a different hash file; the default is `planBTV-sha256.txt` relative to the directory you run the command from (normally the repo root).
 
 ## Environment variables
 

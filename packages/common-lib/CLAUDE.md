@@ -2,7 +2,7 @@
 
 ## Overview
 
-Shared utility library providing formatters (bytes, counts, seconds), math helpers (distributions, rounding, percentages), and general utilities (error handling, object helpers, sleep, camelCase).
+Shared utility library providing formatters (bytes, counts, seconds), math helpers (distributions, rounding, percentages), and general utilities (error handling, object helpers, sleep, camelCase, SHA256 file hashing/comparison in `utilities/sha256.ts`).
 
 ## Commands
 

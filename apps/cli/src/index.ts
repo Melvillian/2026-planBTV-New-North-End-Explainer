@@ -2,7 +2,9 @@ import { createRequire } from 'module';
 
 import { Command } from 'commander';
 
+import compareShaCommand from './commands/compare-sha.js';
 import helloCommand from './commands/hello.js';
+import updateHashCommand from './commands/update-hash.js';
 
 declare const BUILD_VERSION: string | undefined;
 interface PackageJson {
@@ -35,6 +37,8 @@ export const main = async () => {
   program.name('cli').version(version).showHelpAfterError(true);
 
   program.addCommand(helloCommand);
+  program.addCommand(compareShaCommand);
+  program.addCommand(updateHashCommand);
 
   return program.parseAsync(process.argv);
 };
