@@ -2,7 +2,7 @@
 
 ## Overview
 
-Vite + React + TypeScript SPA explaining the June 2026 draft planBTV New North End plan. All content is a typed static data module (`src/data/plan.ts`) sourced from `website-content-sources.md` — no backend calls. Built bundle (`dist/`) is served by `apps/api` in production.
+Vite + React + TypeScript SPA explaining the June 2026 draft planBTV New North End plan. All content is a typed static data module (`src/data/plan.ts`) sourced from `website-content-sources.md` — no backend calls. Built bundle (`dist/`) is deployed as a Render static site (see root `render.yaml`).
 
 ## Commands
 

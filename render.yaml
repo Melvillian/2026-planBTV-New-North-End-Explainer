@@ -11,27 +11,8 @@ services:
     buildCommand: bun install --frozen-lockfile && bun run build
     staticPublishPath: apps/web/dist
     routes:
-      # SPA fallback (replaces the Express catch-all in apps/api): existing
-      # files are served directly; everything else rewrites to index.html.
+      # SPA fallback: existing files are served directly; everything else
+      # rewrites to index.html.
       - type: rewrite
         source: /*
         destination: /index.html
-
-  # Legacy Docker web service. Kept until the static site above is verified in
-  # production; then this entry and apps/api are removed together.
-  - type: web
-    name: 2026-planBTV-New-North-End-Explainer-api
-    env: docker
-    autoDeploy: true
-    dockerfilePath: apps/api/Dockerfile
-    healthCheckPath: /health
-    envVars:
-      # Image-constant env vars (also baked into the Dockerfile; safe to repeat):
-      - key: NODE_ENV
-        value: production
-      - key: PORT
-        value: 80
-      # Secrets: declare with `sync: false` and enter the value in the Render
-      # dashboard (encrypted, never committed). Example:
-      # - key: SOME_API_KEY
-      #   sync: false

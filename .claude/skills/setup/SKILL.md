@@ -103,8 +103,7 @@ Print a summary table of all checks:
 
 If everything passed, tell the user they're good to go and remind them of the key commands:
 
-- `bun run docker:build:api` — build the API server app docker image
-- `bun run docker:start:api` - run the API server app in docker
+- `bun run dev:web` — run the web app dev server
 - `bun run dev:cli` — Run the CLI
 - `bun run test` — Run tests
 - `bun run lint` — Lint and fix

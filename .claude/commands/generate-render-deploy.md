@@ -8,6 +8,13 @@ arguments:
 
 Add Render CD deployment capability to the app `apps/$ARGUMENTS.app-name`.
 
+> **Static-first check (do this before anything else):** this command generates
+> a Docker **web service** ($7+/mo). Most frontend apps should instead deploy as
+> a free Render **static site**. Read the `render-deploys` skill and run its
+> static-vs-web-service decision. Only proceed with the steps below if the app
+> genuinely needs a server at request time; for a static site, hand-write the
+> `render.yaml` entry per the skill's blueprint pattern instead.
+
 ## Steps
 
 1. First, verify that `apps/$ARGUMENTS.app-name` exists. If it doesn't, stop and tell the user.

@@ -2,7 +2,7 @@
 
 A resident-facing web app that explains the June 2026 draft **planBTV New North End** neighborhood plan for Burlington, VT. It lets a New North End resident understand, in one sitting, what the plan proposes, what changes for them, and what happens next — honestly, including community concerns. Content is sourced from the 219-page draft plan PDF (see `website-content-sources.md`).
 
-The repo is a TypeScript monorepo (Bun workspaces): `apps/web` is the Vite + React explainer SPA, `apps/api` is an Express server that serves the built web app and JSON endpoints, and `packages/*` hold the importable logic.
+The repo is a TypeScript monorepo (Bun workspaces): `apps/web` is the Vite + React explainer SPA (deployed as a [Render static site](https://render.com/docs/static-sites)), `apps/cli` is a maintenance CLI, and `packages/*` hold the importable logic.
 
 ## Setup
 
@@ -25,10 +25,8 @@ See the [Environment variables](#environment-variables) section below for requir
 - TypeScript for type safety
 - ES Modules for fast builds
 - NodeNext node resolution
-- React (Vite) web app in `apps/web`
-- Command line app, React app, and web server
+- React (Vite) web app in `apps/web`, deployed as a Render static site
 - CLI via @commander
-- Express for the API server
 - Prettier for code formatting
 - ESLint for linting
 - VSCode will auto-format on save and paste
@@ -42,9 +40,7 @@ See the [Environment variables](#environment-variables) section below for requir
 | `bun run build`            | Build all packages and apps                           |
 | `bun run dev:cli`          | Build packages, then run the CLI app                  |
 | `bun run cli <command>`    | Build, then run a CLI command (see below)             |
-| `bun run dev:api`          | Build packages, then run the API server in watch mode |
-| `bun run docker:build:api` | Build the API Docker image                            |
-| `bun run docker:start:api` | Run the API Docker image on port 8080                 |
+| `bun run dev:web`          | Run the web app dev server (vite)                     |
 | `bun run test`             | Run tests (vitest)                                    |
 | `bun run test:watch`       | Run tests in watch mode                               |
 | `bun run test:coverage`    | Generate test coverage report                         |
