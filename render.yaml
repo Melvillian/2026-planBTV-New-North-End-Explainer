@@ -1,5 +1,24 @@
 services:
 
+  # Static site serving the apps/web SPA from Render's CDN. No compute cost —
+  # the build runs in Render's native environment (bun is included because the
+  # repo root has bun.lock; version pinned via .bun-version), and the same
+  # `bun install && bun run build` works identically locally.
+  - type: web
+    name: 2026-planBTV-New-North-End-Explainer-web
+    runtime: static
+    autoDeploy: true
+    buildCommand: bun install --frozen-lockfile && bun run build
+    staticPublishPath: apps/web/dist
+    routes:
+      # SPA fallback (replaces the Express catch-all in apps/api): existing
+      # files are served directly; everything else rewrites to index.html.
+      - type: rewrite
+        source: /*
+        destination: /index.html
+
+  # Legacy Docker web service. Kept until the static site above is verified in
+  # production; then this entry and apps/api are removed together.
   - type: web
     name: 2026-planBTV-New-North-End-Explainer-api
     env: docker
