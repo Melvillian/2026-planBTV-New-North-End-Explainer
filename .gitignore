@@ -10,3 +10,6 @@ coverage
 *.tsbuildinfo
 claude-setup.tar.gz
 .DS_Store
+
+# Local copies of the draft plan PDFs (the site links to the City-hosted copies)
+/*.pdf

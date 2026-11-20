@@ -86,14 +86,17 @@ export function FocusAreasSection() {
     <section id="places" className="section">
       <header className="section-header">
         <p className="section-eyebrow">Where housing goes</p>
-        <h2>Five focus areas, 835 homes</h2>
+        <h2>Three focus areas, 599 homes</h2>
         <p className="section-lede">
           Sites were chosen through community input plus a “soft sites”
           analysis; parcels with wetlands, forests, critical infrastructure, or
-          significant existing housing were excluded (pp. 14, 68–69). Every site
-          vision is “illustrative rather than prescriptive” and needs further
-          study and outreach (p. 139). Tap a site for details and what neighbors
-          said about it.
+          significant existing housing were excluded, and the two City parks the
+          analysis flagged “are not and will not be considered as housing sites”
+          (pp. 14, 67–69). The June draft’s Ethan Allen Parkway and Starr Farm
+          West park sites were dropped in the updated draft. Every site vision
+          is “illustrative rather than prescriptive” and needs further study and
+          outreach (p. 139). Tap a site for details and what neighbors said
+          about it.
         </p>
       </header>
 
@@ -106,7 +109,7 @@ export function FocusAreasSection() {
       <div className="secondary-sites">
         <h3 className="subheading">Supporting locations</h3>
         <p className="muted-note">
-          The plan names five focus areas; these secondary locations come from
+          The plan names three focus areas; these secondary locations come from
           its corridor and transportation chapters.
         </p>
         <ul className="secondary-list">

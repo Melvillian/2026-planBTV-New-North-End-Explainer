@@ -1,6 +1,8 @@
 // All content in this module is sourced from website-content-sources.md, the
-// summary of the June 2026 draft "planBTV New North End" (219-page PDF).
-// `cite` fields are page numbers in that document.
+// summary of the updated draft "planBTV New North End" (updated 9/18/2026,
+// published October 2026, 209-page PDF). `cite` fields are page numbers in
+// that document. See docs/plan-diff-2026-06-22-to-2026-10-20.md for what
+// changed from the June 2026 draft.
 
 export interface Stat {
   value: string;
@@ -15,13 +17,13 @@ export const headlineStats: Stat[] = [
     label: 'new homes Burlington needs by 2050',
     detail:
       "About 280 per year, per the Mayor's 2026 Housing Strategy. “Additional housing in the New North End is not a question of 'whether,' but 'how.'”",
-    cite: 'pp. 2, 8, 22–23',
+    cite: 'pp. 2–3, 8, 22–23',
   },
   {
-    value: '835',
-    label: 'homes across five focus areas',
+    value: '599',
+    label: 'homes across three focus areas',
     detail:
-      'Full buildout of the five focus areas adds 835 dwelling units plus 279,000 SF of commercial space.',
+      'Full buildout of the three focus areas adds 599 dwelling units plus 264,000 SF of commercial space. The June draft’s two park sites (835 homes total) were dropped.',
     cite: 'p. 15',
   },
   {
@@ -143,7 +145,7 @@ export const focusAreas: FocusArea[] = [
       'Linear multi-use plaza from North Ave to Leddy Park',
       'Mixed-use 4-story parking garage with ground-floor retail',
       'New bus stops and protected bike lanes',
-      'Masterplan (UD6) is an Immediate-term Quick Win',
+      'Masterplan (UD5) is an Immediate-term Quick Win',
     ],
     phasing:
       'Option 2, created in response to community feedback, phases the work and keeps more existing businesses: Key Bank, the Post Office, and Ace Hardware stay in Phase 1 (177 homes); the plaza and Leddy Park link come in Phase 2 (265 homes).',
@@ -210,59 +212,6 @@ export const focusAreas: FocusArea[] = [
     },
     cite: 'pp. 146–149',
   },
-  {
-    id: 'ethan-allen-parkway',
-    name: 'Ethan Allen Parkway',
-    ownership: 'City-owned park land',
-    tagline: 'New neighborhood center via a 90° bend of the Parkway',
-    homes: '123 homes',
-    commercial: '~14,800 SF — “restaurants, breweries, and cultural venues”',
-    features: [
-      'Bends the Parkway 90° at North Ave to create the site',
-      'Ethan Allen Gateway Plaza linking park to street',
-      'Community garden and community center; playground preserved',
-      'Zoning study (UD7) is an Immediate-term Quick Win',
-    ],
-    phasing:
-      'The plan urges “a cautious and deliberate approach” to housing in parks, and the realignment can proceed without any change to Ethan Allen Park if that is not politically feasible.',
-    feedback: {
-      support: [
-        'Interest in a neighborhood center with restaurants and venues',
-      ],
-      concerns: [
-        'Strongest opposition of any site',
-        'Historic park entrance and grass front lawn',
-        'Habitat and ephemeral plants',
-        'Residents “generally not in favor of using the front lawn of Ethan Allen Park for housing”',
-      ],
-    },
-    cite: 'pp. 107, 174–179',
-  },
-  {
-    id: 'starr-farm-west',
-    name: 'Starr Farm West (Starr Farm Park)',
-    ownership: 'City-owned park land',
-    tagline: 'Enhanced park gateway with senior housing',
-    homes:
-      '111–113 homes, multigenerational/senior with accessible entries and elevators',
-    commercial: 'Café with bike repair at a Greenway mobility hub',
-    features: [
-      'New bike path from the Greenway to North Ave',
-      'Splash pad, ice rink, community gardens',
-      'Soccer field upgrades and a concession stand',
-      'Playground, field, and dog park/community garden retained',
-    ],
-    phasing: null,
-    feedback: {
-      support: ['Housing diversity and the added retail'],
-      concerns: [
-        'Tree canopy and habitat loss — “rare and possibly threatened bird and plant species” along Starr Farm Rd',
-        'Stormwater',
-        'Distance from services',
-      ],
-    },
-    cite: 'pp. 180–184',
-  },
 ];
 
 export interface SecondarySite {
@@ -271,14 +220,14 @@ export interface SecondarySite {
   cite: string;
 }
 
-// The plan names five focus areas; these are secondary/supporting locations
+// The plan names three focus areas; these are secondary/supporting locations
 // drawn from the corridor and transportation chapters.
 export const secondarySites: SecondarySite[] = [
   {
     name: 'City-owned land generally',
     summary:
-      'UD1 studies the development feasibility of every City asset; UD2 explores public land for housing in planBTV 2050 (both Immediate Quick Wins). Using City land can cut housing costs by as much as 20% and generate perpetual revenue via ground leases.',
-    cite: 'pp. 166–168, 216–217',
+      'A Citywide (Civic) Asset Study would inventory all City property and evaluate it for housing and community uses — parks and permanently conserved open spaces are documented but “would not be evaluated for potential housing development” (UD1). UD2 explores public land, again excluding parks, for housing in planBTV 2050 (both Immediate Quick Wins). Using City land can cut housing costs by as much as 20% and generate perpetual revenue via ground leases.',
+    cite: 'pp. 166–168, 176–177, 206–207',
   },
   {
     name: '1024, 1014 & 996 North Ave',
@@ -348,18 +297,18 @@ export const residentImpacts: ImpactTopic[] = [
     title: 'Zoning: what already changed, and what’s next',
     points: [
       'The Neighborhood Code (adopted early 2024) already rezoned all NNE residential areas: duplexes, triplexes, quadplexes, and cottage courts are now allowed on residential streets, and the Residential Corridor zone along North Ave allows up to 4-story multifamily with ground-floor shops.',
-      'The plan says this “is not the end of zoning reform in the NNE” — design guidelines and further zoning analysis for the Ethan Allen Parkway and Starr Farm sites come next.',
+      'The plan says this “is not the end of zoning reform in the NNE” — North Avenue design guidelines (P1) and follow-up zoning analysis for major focus area sites come next.',
       'Nothing proposed anywhere is taller than four stories, and “gentle transition” building types go next to single-family homes.',
     ],
-    cite: 'pp. 39–40, 65, 141–143, 186',
+    cite: 'pp. 17, 32, 39–40, 65, 141–143',
   },
   {
     id: 'traffic',
     title: 'Driving, traffic, and parking',
     points: [
       'North Avenue keeps its existing 2–3 vehicle travel lanes under the preferred redesign, and adds on-street parking and loading on the northeast side.',
-      'New development generates under 3,000 net new daily vehicle trips — about a 30% increase over North Ave’s current ~10,000 vehicles/day, within the corridor’s 10,000–15,000/day capacity, though peak-period intersection pressure is possible.',
-      'Drivers will encounter roundabouts: preferred at the VT 127 interchange, possible at Ethan Allen Parkway, explored at Institute Rd.',
+      'The updated trip table estimates about 570 net new daily vehicle trips from the three focus areas (the accompanying text still cites the June draft’s “less than 3,000”) — either way within North Ave’s 10,000–15,000/day capacity on top of today’s ~10,000 vehicles/day, though peak-period intersection pressure is possible.',
+      'Drivers will encounter roundabouts: preferred at the VT 127 interchange, still under study at Ethan Allen Parkway, explored at Institute Rd.',
       'Side-street changes are proposed or explored at Tracy Dr/Loaldo Dr (one-way pair), Saratoga Ave (one-way in), and Gazo Ave (strategic closures); driveways along North Ave get consolidated as redevelopment occurs.',
       'Traffic calming — chicanes, speed humps, raised intersections, neighborhood traffic circles — comes to designated quiet streets, with community participation in design.',
       'The rejected Plattsburg roundabout would have required taking land from two private parcels and demolishing a Burlington Housing Authority house — a key reason “Bend North Ave” was preferred instead.',
@@ -372,7 +321,7 @@ export const residentImpacts: ImpactTopic[] = [
     points: [
       'The housing-choice principle: affordable and mixed-income options so the NNE “remains accessible to families, older adults, and lower-income residents.” Residents emphasized homeownership for young families over high-rent apartments.',
       'Because land is 10–20% of project cost, building on City-owned land can cut costs by as much as 20% — and the City can require affordability, prioritize land trusts, co-ops, and nonprofits, and keep the land forever through ground leases.',
-      'Aging in place (AARP study): 68% of older adults say rising property taxes affect their ability to stay “a lot”; 57% rate senior housing options fair or poor; 64% worry about when they can no longer drive. Starr Farm West’s senior housing and the transit/walkability agenda respond directly.',
+      'Aging in place (AARP study): 68% of older adults say rising property taxes affect their ability to stay “a lot”; 57% rate senior housing options fair or poor; 64% worry about when they can no longer drive. Residents asked for senior-friendly, stair-free units (Plattsburg), and the transit/walkability agenda responds directly.',
       'Displacement concerns are on the record at Plattsburg (single-family homes) and Ethan Allen Plaza (small businesses) — Plaza Option 2 was created specifically to keep more existing businesses.',
     ],
     cite: 'pp. 8–9, 28–29, 154–168',
@@ -383,21 +332,21 @@ export const residentImpacts: ImpactTopic[] = [
     points: [
       'Route 7 bus: restoring Sunday service (there is none today) is a near-term priority, with more frequency as the neighborhood grows and shelters and benches at warranted stops.',
       'Water mains along North Ave — some from the 1920s — must be replaced as a prerequisite for development, protecting service for new and existing residents alike.',
-      'Wastewater has headroom: the North Plant is at ~40% of capacity now and would reach only ~47% after full buildout, “well within design limits.”',
-      'If public open space is developed for housing, the City must replace commensurate acreage and programming elsewhere (UD3, an Immediate Quick Win).',
+      'Wastewater has headroom: the North Plant is at ~40% of capacity now and would reach only ~45% after full buildout of the three focus areas, “well within design limits.”',
+      'City parks were screened out: “those are not and will not be considered as housing sites.”',
       'Resident voice going forward: an NNE mobility advisory committee, an annual mode-share survey, and a Neighborhood Placemaking Committee.',
     ],
-    cite: 'pp. 13–14, 17, 52, 120–121, 185–188, 212, 218',
+    cite: 'pp. 13–14, 17, 52, 69, 120–121, 165, 176–178, 202, 208',
   },
   {
     id: 'first',
     title: 'What actually happens first',
     points: [
-      'Nearly all Urban Design actions (UD1–UD7) are Immediate-term (1–2 year) studies and plans — not construction.',
+      'Six of the seven Urban Design actions (UD1–UD6) are Immediate-term (1–2 year) studies and plans — not construction. The seventh (UD7, the North Ave water main) is long-term.',
       'Construction of the North Avenue corridor phases is Short- to Long-term (2 to 10+ years), each phase starting with its own scoping study.',
       'The plan is explicit: “Implementation is not guaranteed” — it depends on resident participation, political will, and funding.',
     ],
-    cite: 'pp. 207–219',
+    cite: 'pp. 197–209',
   },
 ];
 
@@ -475,8 +424,9 @@ export const intersections: Improvement[] = [
     points: [
       'Roundabout vs. a “Bend Ethan Allen” 90° realignment — no preferred option yet, pending more engagement.',
       'A 2020 study ended “no build” after resident opposition.',
+      'The updated draft drops housing on the park’s front lawn: the “Bend” option now pairs the realignment with possible park programming or ecological landscaping, and new housing only on adjacent private property.',
     ],
-    cite: 'PDF pp. 72, 104–109',
+    cite: 'PDF pp. 72, 104–111',
   },
   {
     title: 'North Ave / Plattsburg Ave',
@@ -509,7 +459,7 @@ export const transit: Improvement = {
     'Shelters and benches at every warranted stop.',
     'Dedicated transit funding tied to new development, plus legislative lobbying (M13–M14).',
   ],
-  cite: 'pp. 13, 120–121, 210–211',
+  cite: 'pp. 13, 120–121, 200–201',
 };
 
 export const tdmPrograms: Improvement = {
@@ -538,49 +488,49 @@ export const parkImpacts: ParkImpact[] = [
     status: 'enhanced',
     summary:
       'The waterfront spine gets its own framework (GW1–GW9): a safety audit (Immediate Quick Win), wayfinding, year-round surface materials, better winter maintenance (the path can’t be salted — runoff enters the lake), wildlife-conscious lighting, recreation-waypoint mobility hubs, environmental education, adopt-a-path stewardship, and possible widening of crowded segments.',
-    cite: 'pp. 13, 130–135, 214–215',
+    cite: 'pp. 13, 130–135, 204–205',
   },
   {
     name: 'Leddy Park',
     status: 'enhanced',
     summary:
       'Gains a linear multi-use plaza connecting its 75 acres to North Ave through the Ethan Allen Plaza redevelopment — “a welcoming gateway.” Adjacent development “must complement — not compete with” the park, guided by the 2024 Leddy Park Comprehensive Plan.',
-    cite: 'pp. 33, 63, 66, 150–159, 198–199',
+    cite: 'pp. 33, 63, 66, 150–159, 188–189',
   },
   {
     name: 'Ethan Allen Park',
-    status: 'contested',
+    status: 'protected',
     summary:
-      'The most contested site: housing, a gateway plaza, community garden, and parking proposed on or near park land. Residents opposed housing on the front lawn; the road realignment “does not require any change to Ethan Allen Park if that is not politically feasible.” Some trees would be removed at the roundabout with replacement planting, and the historic 1905/1937 stone gateway could move to the roundabout island. The front lawn is also a pollinator-meadow candidate.',
-    cite: 'pp. 104–108, 174–179, 203',
+      'No longer a housing site. The June draft proposed ~123 homes on the front lawn and drew the strongest opposition of any site; the updated plan drops it and says City parks “are not and will not be considered as housing sites.” The North Ave intersection is still under study: a roundabout would remove some trees (with replacement planting) and could move the historic stone gateway to the center island, while the “Bend” option could add park programming or a more ecological landscape, with any new housing on adjacent private land. The front lawn remains a pollinator-meadow and plaza-activation candidate.',
+    cite: 'pp. 14, 69, 104–111, 193',
   },
   {
     name: 'Starr Farm Park',
-    status: 'contested',
+    status: 'protected',
     summary:
-      'Partially developed under the Starr Farm West concept: senior housing plus a new splash pad, ice rink, community gardens, soccer field upgrades, and a Greenway mobility hub. Playground, field, and dog park/community garden retained. Concerns center on tree canopy and habitat loss, including possibly threatened species along Starr Farm Rd.',
-    cite: 'pp. 180–184',
+      'No longer a housing site. The June draft’s “Starr Farm West” concept (~111 senior/multigenerational homes plus a splash pad, ice rink, and Greenway mobility hub) drew concerns about tree canopy and possibly threatened species, and the updated plan drops it — parks “are not and will not be considered as housing sites.” Starr Farm Road remains a Greenway gateway-art location.',
+    cite: 'pp. 14, 69, 193',
   },
   {
     name: 'Arms Forest & Rock Point',
     status: 'protected',
     summary:
       'Explicitly preserved and protected. New pedestrian paths from North Ave through the Alliance Church site improve access; the community worries about recreational pressure.',
-    cite: 'pp. 28, 31, 33, 146–149, 201',
+    cite: 'pp. 28, 31, 33, 146–149, 191',
   },
   {
     name: 'VT 127 interchange',
     status: 'new',
     summary:
       'Reimagined as “a park-like space” with regenerated native ecosystems, strengthening the ecological connection from Arms Forest to the Winooski Valley.',
-    cite: 'PDF p. 102; p. 201',
+    cite: 'PDF p. 102; p. 191',
   },
   {
     name: 'Franklin Square',
     status: 'new',
     summary:
       'Activated as a public plaza with a mobility hub, shelter, and seating — also a plaza-activation and gateway-art site.',
-    cite: 'pp. 196, 203',
+    cite: 'pp. 186, 193',
   },
   {
     name: 'Schifilliti Park',
@@ -599,11 +549,11 @@ export const parkImpacts: ParkImpact[] = [
 ];
 
 export const parkSafeguard =
-  'If public open space is developed for housing, the City must replace commensurate acreage and programming elsewhere — UD3, an Immediate-term Quick Win (pp. 17, 187, 216).';
+  'The soft sites analysis identified two City parks, but “those are not and will not be considered as housing sites.” The City’s Public Asset Study (UD1) and planBTV 2050 land review (UD2) now explicitly exclude parks and permanently conserved open spaces (pp. 14, 17, 69, 167, 176–177).';
 
 export const newGreenSpaces = [
   'New park and plazas at Plattsburg/Franklin Square',
-  'Civic plazas at the Alliance Church site and Ethan Allen Parkway',
+  'A civic plaza at the Alliance Church site and a gateway plaza/park entrance at Ethan Allen Parkway',
   'Linear plaza at Ethan Allen Plaza',
   'Community gardens at multiple sites',
   'Slip-lane land at 127/Plattsburg restored to native ecosystems',
@@ -633,7 +583,7 @@ export interface PlanAction {
   quickWin: boolean;
 }
 
-// The full draft lists 44 actions (pp. 17–18, 207–219). These are the ones
+// The full draft lists 43 actions (pp. 17–18, 197–209). These are the ones
 // identifiable from the summary; timeframes marked "See draft" are not
 // stated in the source summary.
 export const actions: PlanAction[] = [
@@ -799,55 +749,49 @@ export const actions: PlanAction[] = [
   {
     code: 'UD1',
     category: 'Urban Design',
-    title: 'Public Asset Study of every City asset’s development feasibility',
+    title:
+      'Public Asset Study of City assets’ development feasibility (excluding parks and permanently conserved open spaces)',
     timeframe: 'Immediate (1–2 yr)',
     quickWin: true,
   },
   {
     code: 'UD2',
     category: 'Urban Design',
-    title: 'Explore public land for housing in planBTV 2050',
+    title:
+      'Explore public land for housing in planBTV 2050 (excluding parks and permanently conserved open spaces)',
     timeframe: 'Immediate (1–2 yr)',
     quickWin: true,
   },
   {
     code: 'UD3',
     category: 'Urban Design',
-    title:
-      'Replace any developed public open space with commensurate acreage and programming',
+    title: 'CHIP financing pathway',
     timeframe: 'Immediate (1–2 yr)',
     quickWin: true,
   },
   {
     code: 'UD4',
     category: 'Urban Design',
-    title: 'CHIP financing pathway',
+    title: 'Public-private partnership template',
     timeframe: 'Immediate (1–2 yr)',
-    quickWin: false,
+    quickWin: true,
   },
   {
     code: 'UD5',
-    category: 'Urban Design',
-    title: 'Public-private partnership template',
-    timeframe: 'Immediate (1–2 yr)',
-    quickWin: false,
-  },
-  {
-    code: 'UD6',
     category: 'Urban Design',
     title: 'Ethan Allen Plaza masterplan',
     timeframe: 'Immediate (1–2 yr)',
     quickWin: true,
   },
   {
-    code: 'UD7',
+    code: 'UD6',
     category: 'Urban Design',
-    title: 'Ethan Allen Parkway zoning/feasibility study',
+    title: 'Ethan Allen Parkway intersection realignment study',
     timeframe: 'Immediate (1–2 yr)',
     quickWin: true,
   },
   {
-    code: 'UD8',
+    code: 'UD7',
     category: 'Urban Design',
     title:
       'North Ave water main replacement — a prerequisite for development ($$$)',
@@ -916,7 +860,7 @@ export interface ProcessFact {
 export const processFacts: ProcessFact[] = [
   {
     label: 'Who made it',
-    text: 'Developed December 2024 – June 2026 by the Office of City Planning with CCRPC; consultants Utile, Nelson/Nygaard, Landwise, Wagner Hodgson, and Engineering Ventures.',
+    text: 'Developed December 2024 – September 2026 by the Office of City Planning with CCRPC; consultants Utile, Nelson/Nygaard, Landwise, Wagner Hodgson, and Engineering Ventures.',
   },
   {
     label: 'Who was heard',
@@ -936,7 +880,53 @@ export const bowlingAlleyQuote =
   '“THE BOWLING ALLEY IS SO SPECIAL. Please don’t LOSE it through this process.”';
 
 export const sourceNote =
-  'This site summarizes the draft planBTV New North End (June 2026, 219 pages). It is an unofficial explainer; page citations refer to the draft document. Implementation is not guaranteed — it depends on resident participation, political will, and funding (p. 207).';
+  'This site summarizes the updated draft planBTV New North End (updated September 18, 2026; published October 2026; 209 pages). It is an unofficial explainer; page citations refer to that document. Implementation is not guaranteed — it depends on resident participation, political will, and funding (p. 197).';
 
-export const planPdfUrl =
-  'https://www.burlingtonvt.gov/DocumentCenter/View/12098/planBTV-New-North-End-Draft?bidId=';
+export interface PlanDocument {
+  id: 'current' | 'previous';
+  label: string;
+  title: string;
+  date: string;
+  pages: number;
+  sizeMb: number;
+  // The City of Burlington's own copy of this version.
+  href: string;
+  note: string;
+}
+
+// Both drafts, linked to the City's copies so readers can compare them.
+// This site's content and page citations follow the current draft.
+// Verified 2026-11-19: each URL serves the exact PDF this site was diffed
+// against (sha256 e0888945… current, 8a1f9c16… previous).
+export const planDocuments: PlanDocument[] = [
+  {
+    id: 'current',
+    label: 'Current draft',
+    title: 'planBTV New North End — updated draft',
+    date: 'Updated Sept. 18, 2026 · published Oct. 2026',
+    pages: 209,
+    sizeMb: 84,
+    href: 'https://www.burlingtonvt.gov/DocumentCenter/View/12761/260918-planBTV_NNE_reducedSize?bidId=',
+    note: 'Three focus areas, 599 homes. City parks are no longer housing sites. This site is based on this version.',
+  },
+  {
+    id: 'previous',
+    label: 'Previous draft',
+    title: 'planBTV New North End — draft',
+    date: 'June 22, 2026',
+    pages: 219,
+    sizeMb: 94,
+    href: 'https://www.burlingtonvt.gov/DocumentCenter/View/12098/planBTV-New-North-End-Draft?bidId=',
+    note: 'Five focus areas, 835 homes, including housing concepts at Ethan Allen Park and Starr Farm Park.',
+  },
+];
+
+export const planProjectUrl =
+  'https://www.burlingtonvt.gov/824/planBTV-New-North-End';
+
+export const whatChanged = [
+  'Ethan Allen Park and Starr Farm Park were dropped as housing sites; parks “are not and will not be considered as housing sites.”',
+  'Three focus areas instead of five: 599 homes and 264,000 SF of commercial space (was 835 homes and 279,000 SF).',
+  'The park-replacement action (old UD3) was removed, and the Urban Design actions were renumbered UD1–UD7 (43 actions total, was 44).',
+  'New: a Citywide Asset Study page and a letter from the Mayor.',
+];

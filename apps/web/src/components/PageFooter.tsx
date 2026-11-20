@@ -1,9 +1,4 @@
-import {
-  bowlingAlleyQuote,
-  planPdfUrl,
-  processFacts,
-  sourceNote,
-} from '../data/plan';
+import { bowlingAlleyQuote, processFacts, sourceNote } from '../data/plan';
 
 export function PageFooter() {
   return (
@@ -23,11 +18,8 @@ export function PageFooter() {
       </div>
 
       <p className="source-note">
-        {sourceNote} Read the original draft plan:{' '}
-        <a href={planPdfUrl} target="_blank" rel="noopener noreferrer">
-          planBTV New North End — full 219-page PDF (burlingtonvt.gov)
-        </a>
-        .
+        {sourceNote} Both the current and previous drafts are linked under{' '}
+        <a href="#plan-documents">Read the plan</a> at the top of this page.
       </p>
     </footer>
   );

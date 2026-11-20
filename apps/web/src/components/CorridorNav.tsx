@@ -58,7 +58,7 @@ export function CorridorNav() {
           </li>
         ))}
       </ol>
-      <p className="corridor-nav-foot">Draft · June 2026</p>
+      <p className="corridor-nav-foot">Updated draft · Sept. 2026</p>
     </nav>
   );
 }

@@ -2,7 +2,7 @@
 
 ## Overview
 
-Vite + React + TypeScript SPA explaining the June 2026 draft planBTV New North End plan. All content is a typed static data module (`src/data/plan.ts`) sourced from `website-content-sources.md` — no backend calls. Built bundle (`dist/`) is deployed as a Render static site (see root `render.yaml`).
+Vite + React + TypeScript SPA explaining the updated (September 2026) draft planBTV New North End plan. All content is a typed static data module (`src/data/plan.ts`) sourced from `website-content-sources.md` — no backend calls. Built bundle (`dist/`) is deployed as a Render static site (see root `render.yaml`).
 
 ## Commands
 
@@ -19,6 +19,7 @@ Vite + React + TypeScript SPA explaining the June 2026 draft planBTV New North E
 - `src/sections.ts` - Page section registry (drives nav + scrollspy)
 - `src/components/` - One component per page section + `CorridorNav` (scrollspy spine nav)
 - `src/styles.css` - All styling; design tokens in `:root`
+- `src/components/PlanDocuments.tsx` - "Read the plan" panel at the top of the Hero: links to the City's copies of the current (Sept 2026) and previous (June 2026) drafts, from `planDocuments` in `plan.ts`
 
 ## Design notes
 

@@ -1,6 +1,6 @@
 # planBTV New North End Explainer
 
-A resident-facing web app that explains the June 2026 draft **planBTV New North End** neighborhood plan for Burlington, VT. It lets a New North End resident understand, in one sitting, what the plan proposes, what changes for them, and what happens next — honestly, including community concerns. Content is sourced from the 219-page draft plan PDF (see `website-content-sources.md`).
+A resident-facing web app that explains the updated (September 2026) draft **planBTV New North End** neighborhood plan for Burlington, VT. It lets a New North End resident understand, in one sitting, what the plan proposes, what changes for them, and what happens next — honestly, including community concerns. Content is sourced from the 209-page updated draft plan PDF (see `website-content-sources.md`). The site links to the City's copies of both the current draft and the previous June 2026 draft at the top of the page.
 
 The repo is a TypeScript monorepo (Bun workspaces): `apps/web` is the Vite + React explainer SPA (deployed as a [Render static site](https://render.com/docs/static-sites)), `apps/cli` is a maintenance CLI, and `packages/*` hold the importable logic.
 

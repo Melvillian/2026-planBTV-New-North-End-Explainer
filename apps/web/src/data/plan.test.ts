@@ -12,8 +12,8 @@ import {
 } from './plan';
 
 describe('plan data', () => {
-  it('has five focus areas and five secondary sites', () => {
-    expect(focusAreas).toHaveLength(5);
+  it('has three focus areas and five secondary sites', () => {
+    expect(focusAreas).toHaveLength(3);
     expect(secondarySites).toHaveLength(5);
   });
 

@@ -30,12 +30,12 @@ export function ImplementationSection() {
     <section id="implementation" className="section">
       <header className="section-header">
         <p className="section-eyebrow">What happens when</p>
-        <h2>44 actions — and no guarantees</h2>
+        <h2>43 actions — and no guarantees</h2>
         <p className="section-lede">
-          The plan closes with 44 actions across five categories, each with a
-          timeframe, lead agency, and cost scale (pp. 17–18, 207–219). It is
+          The plan closes with 43 actions across five categories, each with a
+          timeframe, lead agency, and cost scale (pp. 17–18, 197–209). It is
           equally clear that “implementation is not guaranteed” — it depends on
-          resident participation, political will, and funding (p. 207). Below
+          resident participation, political will, and funding (p. 197). Below
           are the actions identifiable in this summary; timeframes marked “see
           draft” are specified in the full document.
         </p>

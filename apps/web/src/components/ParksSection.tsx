@@ -17,17 +17,18 @@ export function ParksSection() {
     <section id="parks" className="section">
       <header className="section-header">
         <p className="section-eyebrow">Parks & green space</p>
-        <h2>More parkland than any neighborhood — and two hard questions</h2>
+        <h2>More parkland than any neighborhood — and no housing in parks</h2>
         <p className="section-lede">
           The NNE’s ~350 acres of parks are “destination” spaces; the
-          neighborhood lacks everyday plazas and squares (pp. 54–55). Two of the
-          five housing sites sit on City park land, and that’s where the
-          strongest opposition lives.
+          neighborhood lacks everyday plazas and squares (pp. 54–55). The June
+          draft proposed housing at Ethan Allen Park and Starr Farm Park, which
+          drew the strongest opposition of any sites. The updated draft drops
+          both.
         </p>
       </header>
 
       <aside className="safeguard">
-        <p className="safeguard-label badge-mono">UD3 · safeguard</p>
+        <p className="safeguard-label badge-mono">Parks · not housing sites</p>
         <p>{parkSafeguard}</p>
       </aside>
 
