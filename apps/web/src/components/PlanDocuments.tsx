@@ -15,7 +15,7 @@ export function PlanDocuments() {
       <ul className="plan-docs-list">
         {planDocuments.map((doc) => (
           <li key={doc.id} className={`plan-doc plan-doc-${doc.id}`}>
-            <p className="plan-doc-label badge-mono">{doc.label}</p>
+            <p className="plan-doc-label">{doc.label}</p>
             <a
               className="plan-doc-link"
               href={doc.href}

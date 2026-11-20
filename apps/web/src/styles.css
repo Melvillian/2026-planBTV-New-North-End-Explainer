@@ -323,9 +323,23 @@ a {
 }
 
 .plan-doc-label {
-  margin: 0 0 0.3rem;
+  width: fit-content;
+  margin: 0 0 0.45rem;
+  padding: 0.15rem 0.5rem;
+  font-family: var(--font-mono);
+  font-weight: 600;
   font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   color: var(--stone);
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+
+.plan-doc-current .plan-doc-label {
+  color: var(--lake);
+  border-color: #b9d0de;
 }
 
 .plan-doc-link {
