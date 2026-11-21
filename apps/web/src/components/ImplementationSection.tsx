@@ -29,7 +29,7 @@ export function ImplementationSection() {
   return (
     <section id="implementation" className="section">
       <header className="section-header">
-        <p className="section-eyebrow">What happens when</p>
+        <p className="section-eyebrow">Proposed actions and timing</p>
         <h2>43 actions — and no guarantees</h2>
         <p className="section-lede">
           The plan closes with 43 actions across five categories, each with a

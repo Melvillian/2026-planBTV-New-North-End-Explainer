@@ -78,6 +78,12 @@ jobs:
       - name: Build
         run: bun run build
 
+      # generators/ is outside the Bun workspaces, so its deps (e.g. commander)
+      # need their own install for ESLint's import resolver to find them.
+      - name: Install generators dependencies
+        run: bun install --frozen-lockfile
+        working-directory: generators
+
       # Use lint:check (no --fix) so CI reports lint errors instead of silently
       # auto-fixing them in an ephemeral runner where the fixes are never committed.
       - name: Lint
