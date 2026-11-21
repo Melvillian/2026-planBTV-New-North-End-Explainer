@@ -264,7 +264,8 @@ export interface BuildingType {
 export const kitOfParts: BuildingType[] = [
   {
     name: '3-over-1 multifamily',
-    description: 'Three floors of homes above a ground floor that can hold retail, commercial, or community space.',
+    description:
+      'Three floors of homes above a ground floor that can hold retail, commercial, or community space.',
   },
   {
     name: 'Single-stair multifamily',
