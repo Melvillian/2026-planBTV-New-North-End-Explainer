@@ -1,4 +1,5 @@
 import { CorridorNav } from './components/CorridorNav';
+import { FirstVisitNotice } from './components/FirstVisitNotice';
 import { FocusAreasSection } from './components/FocusAreasSection';
 import { Hero } from './components/Hero';
 import { ImplementationSection } from './components/ImplementationSection';
@@ -12,6 +13,7 @@ import { YourStreetSection } from './components/YourStreetSection';
 export function App() {
   return (
     <div className="page">
+      <FirstVisitNotice />
       <CorridorNav />
       <main className="content">
         <Hero />
