@@ -85,7 +85,7 @@ export function FocusAreasSection() {
   return (
     <section id="places" className="section">
       <header className="section-header">
-        <p className="section-eyebrow">Where housing goes</p>
+        <p className="section-eyebrow">Where housing could go</p>
         <h2>Three focus areas, 599 homes</h2>
         <p className="section-lede">
           Sites were chosen through community input plus a “soft sites”

@@ -72,7 +72,7 @@ export const comparisons: Comparison[] = [
   {
     label: 'Drive alone to work',
     nne: 61,
-    city: 42,
+    city: 43,
     unit: '%',
     note: '~70% of NNE residents drive to work, 61% alone — nearly 20 points higher than the rest of the city.',
     cite: 'p. 46',
@@ -264,7 +264,7 @@ export interface BuildingType {
 export const kitOfParts: BuildingType[] = [
   {
     name: '3-over-1 multifamily',
-    description: 'Retail below, three floors of homes above.',
+    description: 'Three floors of homes above a ground floor that can hold retail, commercial, or community space.',
   },
   {
     name: 'Single-stair multifamily',
@@ -307,10 +307,10 @@ export const residentImpacts: ImpactTopic[] = [
     title: 'Driving, traffic, and parking',
     points: [
       'North Avenue keeps its existing 2–3 vehicle travel lanes under the preferred redesign, and adds on-street parking and loading on the northeast side.',
-      'The updated trip table estimates about 570 net new daily vehicle trips from the three focus areas (the accompanying text still cites the June draft’s “less than 3,000”) — either way within North Ave’s 10,000–15,000/day capacity on top of today’s ~10,000 vehicles/day, though peak-period intersection pressure is possible.',
-      'Drivers will encounter roundabouts: preferred at the VT 127 interchange, still under study at Ethan Allen Parkway, explored at Institute Rd.',
+      'The updated trip table estimates about 570 net new daily vehicle trips from the three focus areas (the accompanying text still cites the June draft’s “less than 3,000”) — North Ave carries just over 10,000 vehicles/day today, and the plan notes that roads with one lane each way commonly handle about 10,000–15,000/day; it concludes the new trips “should be able to be accommodated,” though that discussion uses the older, larger development assumptions and peak-period intersection pressure is possible.',
+      'Roundabouts are proposed or studied: preferred at the VT 127 interchange, still under study at Ethan Allen Parkway, explored at Institute Rd.',
       'Side-street changes are proposed or explored at Tracy Dr/Loaldo Dr (one-way pair), Saratoga Ave (one-way in), and Gazo Ave (strategic closures); driveways along North Ave get consolidated as redevelopment occurs.',
-      'Traffic calming — chicanes, speed humps, raised intersections, neighborhood traffic circles — comes to designated quiet streets, with community participation in design.',
+      'Traffic calming — chicanes, speed humps, raised intersections, neighborhood traffic circles — is proposed for designated quiet streets, with community participation in design.',
       'The rejected Plattsburg roundabout would have required taking land from two private parcels and demolishing a Burlington Housing Authority house — a key reason “Bend North Ave” was preferred instead.',
     ],
     cite: 'pp. 11, 92, 97; PDF pp. 76–125',
@@ -330,7 +330,7 @@ export const residentImpacts: ImpactTopic[] = [
     id: 'services',
     title: 'Services, utilities, and daily life',
     points: [
-      'Route 7 bus: restoring Sunday service (there is none today) is a near-term priority, with more frequency as the neighborhood grows and shelters and benches at warranted stops.',
+      'Route 7 bus: the plan calls restoring Sunday service (there is none today) a near-term priority, though its implementation table lists the related lobbying action (M13) as long-term (10+ years), with more frequency as the neighborhood grows and shelters and benches at warranted stops.',
       'Water mains along North Ave — some from the 1920s — must be replaced as a prerequisite for development, protecting service for new and existing residents alike.',
       'Wastewater has headroom: the North Plant is at ~40% of capacity now and would reach only ~45% after full buildout of the three focus areas, “well within design limits.”',
       'City parks were screened out: “those are not and will not be considered as housing sites.”',
@@ -445,7 +445,7 @@ export const bikeWalkNetwork: Improvement = {
     'Neighborhood Greenway Loop (M1): Shore Rd/Gosse Ct/Hope St east–west plus Gazo Ave/Northview Dr/Fairfield Dr north, linking the VT 127 Path and Burlington Greenway through Schifilliti Park.',
     'A High School → Greenway connection via Institute Rd through North Beach Campground, timed to the high school reopening (M2).',
     'Ethan Allen Parkway path (M3) and Plattsburg Ave side path (M4), including removal of the highway-style slip lanes at 127/Plattsburg.',
-    'Mobility hubs at every focus area: transit, car share, secure bike parking, micromobility, bike repair, and cafés (M7).',
+    'A citywide mobility hub plan (M7); the focus-area concepts show hubs that could combine transit, car share, secure bike parking, micromobility, and potentially bike repair or a café.',
     'The neighborhood is only 2 mi × 1.5 mi — nearly all of it is a 5-minute bike ride from North Ave.',
   ],
   cite: 'pp. 13, 46, 50, 77, 85; PDF pp. 74–83',
@@ -457,7 +457,7 @@ export const transit: Improvement = {
     'Restore Route 7 Sunday service — there is currently none.',
     'Increase frequency as the neighborhood grows.',
     'Shelters and benches at every warranted stop.',
-    'Dedicated transit funding tied to new development, plus legislative lobbying (M13–M14).',
+    'Lobby the State Legislature for sustainable transit funding, and explore a transportation fund supported by contributions from new development (M13–M14).',
   ],
   cite: 'pp. 13, 120–121, 200–201',
 };
@@ -470,7 +470,7 @@ export const tdmPrograms: Improvement = {
     'Walk-to-shop trolley libraries (TDM3).',
     'Safe Routes to School at Flynn, CP Smith, Hunt, and Burlington HS (TDM4).',
     'NNE mobility advisory committee (TDM5) and an annual mode survey (TDM6).',
-    'Volunteer microtransit for seniors (TDM7).',
+    'Explore a volunteer-based microtransit program for older residents (TDM7).',
   ],
   cite: 'p. 17; PDF pp. 122–129',
 };

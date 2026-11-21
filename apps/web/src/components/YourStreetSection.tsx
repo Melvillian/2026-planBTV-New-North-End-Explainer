@@ -8,7 +8,7 @@ export function YourStreetSection() {
   return (
     <section id="your-street" className="section">
       <header className="section-header">
-        <p className="section-eyebrow">What changes for you</p>
+        <p className="section-eyebrow">What could change for you</p>
         <h2>If you live here now</h2>
         <p className="section-lede">
           The questions residents actually ask: what does this do to my street,

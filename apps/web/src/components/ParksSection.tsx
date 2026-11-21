@@ -48,7 +48,7 @@ export function ParksSection() {
       </div>
 
       <div className="new-green">
-        <h3 className="subheading">New green spaces the plan creates</h3>
+        <h3 className="subheading">New green spaces the plan proposes</h3>
         <ul className="principle-list">
           {newGreenSpaces.map((space) => (
             <li key={space}>{space}</li>
